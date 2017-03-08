@@ -5,7 +5,7 @@ var height = $(window).height();
 $(document).ready(function(){
    //$("#menu").hide();
    $("#pageTitle").hide().fadeIn(500);
-   /*$("#menuIcon").click(function() {
+   $("#menuIcon").click(function() {
       //$("#menu").toggle(500, "swing");
       if(menuIsHidden) {
         $("#menu").show(500, "swing");
@@ -18,7 +18,7 @@ $(document).ready(function(){
    });*/
    /*$("#list").click(function() {
       $("#menu").hide();
-   });*/
+   });
 });
 
 $(document).mouseup(function (e) {
