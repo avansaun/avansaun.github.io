@@ -31,7 +31,7 @@ src: url('Montserrat.eot?#iefix') format(‘embedded-opentype’),
 	left: 5%;
 }
 
-.iconHeader {
+/*.iconHeader {
 	position: fixed;
 	z-index: 99;
 	margin-top: 2.5%;
@@ -39,7 +39,7 @@ src: url('Montserrat.eot?#iefix') format(‘embedded-opentype’),
 
 .iconHeader a {
 	color: black;
-}
+}*/
 
 
 .drop-menu {

@@ -3,9 +3,9 @@ var width = $(window).width();
 var height = $(window).height();
 
 $(document).ready(function(){
-   $("#menu").hide();
+   //$("#menu").hide();
    $("#pageTitle").hide().fadeIn(500);
-   $("#menuIcon").click(function() {
+   /*$("#menuIcon").click(function() {
       //$("#menu").toggle(500, "swing");
       if(menuIsHidden) {
         $("#menu").show(500, "swing");
@@ -15,10 +15,10 @@ $(document).ready(function(){
         $("#menu").hide(500, "swing");
         menuIsHidden = true;
       }
-   });
-   $("#list").click(function() {
+   });*/
+   /*$("#list").click(function() {
       $("#menu").hide();
-   });
+   });*/
 });
 
 $(document).mouseup(function (e) {
