@@ -4,7 +4,7 @@ var height = $(window).height();
 
 $(document).ready(function(){
    //$("#menu").hide();
-   $("#pageTitle").hide().fadeIn(500);
+   /*$("#pageTitle").hide().fadeIn(500);
    $("#menuIcon").click(function() {
       //$("#menu").toggle(500, "swing");
       if(menuIsHidden) {
@@ -18,10 +18,10 @@ $(document).ready(function(){
    });*/
    /*$("#list").click(function() {
       $("#menu").hide();
-   });
+   });*/
 });
 
-$(document).mouseup(function (e) {
+/*$(document).mouseup(function (e) {
     var container = $("#menu");
 
     if (!container.is(e.target) // if the target of the click isn't the container...
@@ -30,7 +30,7 @@ $(document).mouseup(function (e) {
         container.hide();
          $("menu").unbind( 'click', clickDocument );
     }
-});
+});*/
 
 /*$(function () {
     $(window.on('resize', function () {
