@@ -21,6 +21,18 @@ $(document).ready(function(){
    });*/
 });
 
+$("signUpForm").submit(function(event) {
+//Prevent the default action of the event: in this case, prevent form from submitting data
+  event.preventDefault();
+//Other code for click event here
+});
+
+$("messageForm").submit(function(event) {
+//Prevent the default action of the event: in this case, prevent form from submitting data
+  event.preventDefault();
+//Other code for click event here
+});
+
 /*$(document).mouseup(function (e) {
     var container = $("#menu");
 
