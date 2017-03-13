@@ -9,6 +9,9 @@ $(document).ready(function(){
   });
 });
 
+function thanksMessage() {
+    alert("Thank you! We will be in touch with you shortly.");
+}
 
 /*$(document).mouseup(function (e) {
     var container = $("#menu");
@@ -19,11 +22,4 @@ $(document).ready(function(){
         container.hide();
          $("menu").unbind( 'click', clickDocument );
     }
-});*/
-
-/*$(function () {
-    $(window.on('resize', function () {
-      $('.slide'.css('height', $(this).height() + "px");
-    });
-    $(window).trigger('resize');
 });*/
