@@ -6,6 +6,11 @@ $(document).ready(function(){
   $("#menu").hide();
   $("#menuIcon").click(function(){
       $("#menu").toggle(350);
+      $("#menuIcon").hide();
+  });
+  $("#menu").click(function(){
+    $("#menuIcon").show();
+    $("#menu").hide();
   });
 });
 

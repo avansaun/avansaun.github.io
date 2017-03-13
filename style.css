@@ -27,8 +27,8 @@ src: url('Montserrat.eot?#iefix') format(‘embedded-opentype’),
 .iconHeader {
 	position: fixed;
 	z-index: 99;
-	margin-top: 5%;
-	margin-left: -2%;
+	margin-top: 2%;
+	margin-left: -3%;
 }
 
 .iconHeader a {
