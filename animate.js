@@ -3,35 +3,12 @@ var width = $(window).width();
 var height = $(window).height();
 
 $(document).ready(function(){
-   //$("#menu").hide();
-   /*$("#pageTitle").hide().fadeIn(500);
-   $("#menuIcon").click(function() {
-      //$("#menu").toggle(500, "swing");
-      if(menuIsHidden) {
-        $("#menu").show(500, "swing");
-        //$('.iconHeader a'.css('color', "white");
-        menuIsHidden = false;
-      }else{
-        $("#menu").hide(500, "swing");
-        menuIsHidden = true;
-      }
-   });*/
-   /*$("#list").click(function() {
-      $("#menu").hide();
-   });*/
+  $("#menu").hide();
+  $("#menuIcon").click(function(){
+      $("#menu").toggle(350);
+  });
 });
 
-$("signUpForm").submit(function(event) {
-//Prevent the default action of the event: in this case, prevent form from submitting data
-  event.preventDefault();
-//Other code for click event here
-});
-
-$("messageForm").submit(function(event) {
-//Prevent the default action of the event: in this case, prevent form from submitting data
-  event.preventDefault();
-//Other code for click event here
-});
 
 /*$(document).mouseup(function (e) {
     var container = $("#menu");

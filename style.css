@@ -27,8 +27,8 @@ src: url('Montserrat.eot?#iefix') format(‘embedded-opentype’),
 .iconHeader {
 	position: fixed;
 	z-index: 99;
-	margin-top: 25%;
-	margin-left: 25%;
+	margin-top: 5%;
+	margin-left: -2%;
 }
 
 .iconHeader a {
@@ -62,9 +62,9 @@ src: url('Montserrat.eot?#iefix') format(‘embedded-opentype’),
 	padding-right: 2vw;
 }
 
-.drop-menu li:first-child {
+/*.drop-menu li:first-child {
 	padding-left: 2vw;
-}
+}*/
 
 .drop-menu h3:hover {
 	color: #D18D3C;
@@ -184,6 +184,8 @@ a:active {
 .infoOnImg h2 {
 	font-size: 4vw;
 	color: rgb(74, 74, 74);
+	margin-top: -5%;
+
 
 }
 
@@ -231,6 +233,7 @@ a:active {
 .infoOnWildImg h2 {
 	font-size: 4vw;
 	color: rgb(74, 74, 74);
+	margin-top: -5%;
 }
 
 .infoOnWildImg p {
@@ -260,7 +263,7 @@ a:active {
 }
 
 .cityOnImg {
-	background-image: url('Images/UrbanNight.jpeg');
+	background-image: url('Images/urban.jpeg');
 	background-position: top:left;
 	background-size: cover;
 	width: auto;
@@ -276,6 +279,8 @@ a:active {
 
 .infoOnCityImg h2 {
 	font-size: 4vw;
+	margin-top: -5%;
+
 }
 
 .infoOnCityImg p {
@@ -332,7 +337,7 @@ a:active {
    -webkit-transition: box-shadow 0.3s;
 }
 
-.signUpForm input[type=submit] {
+.signUpForm input[type=button] {
 	background-color: white;
 	color: black;
 	border:none;
@@ -343,7 +348,7 @@ a:active {
 	border-radius: 4px;
 }
 
-.signUpForm input:hover[type=submit] {
+.signUpForm input:hover[type=button] {
 	background-color: #D18D3C;
 }
 
@@ -386,7 +391,7 @@ a:active {
    -webkit-transition: box-shadow 0.3s;
 }
 
-.messageForm input[type=submit] {
+.messageForm input[type=button] {
 	background-color: white;
 	color: black;
 	border: 1px solid black;
@@ -398,7 +403,7 @@ a:active {
 	margin-bottom: 5%;
 }
 
-.messageForm input:hover[type=submit] {
+.messageForm input:hover[type=button] {
 	background-color: #0C5E84;
 }
 
