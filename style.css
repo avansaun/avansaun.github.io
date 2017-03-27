@@ -1,0 +1,253 @@
+body {
+	/* Background pattern from Subtle Patterns */
+	background-image: url('images/shattered.png');
+	background-repeat: repeat;
+	background-size: auto;
+	background-attachment: fixed;
+  margin: 0;
+  padding:0;
+}
+
+.nav {
+	padding: 1px;
+	padding-top: 1%;
+	text-align: right;
+}
+
+#smallNav {
+	display: none;
+}
+
+@media (max-width: 450px) {
+  .nav #noLogo {
+		display: none;
+
+	}
+	.nav #smallNav {
+		display: inline-block;
+	}
+}
+
+#logo {
+	font-size: 6vmin;
+	color: #4770b2;
+}
+
+#navLinks li:first-child {
+    float:left;
+		margin-top: -1%;
+}
+.tabs li:last-child {
+	padding-right: 5vw;
+}
+.tabs ul{
+  text-align: right;
+}
+.tabs li {
+	display: inline-block;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.tabs a{
+	color: black;
+	text-decoration: none;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+.tabs a:visited{
+	color: black;
+	text-decoration: none;
+}
+.tabs a:hover{
+	color: #4770b2;
+	text-decoration: none;
+}
+.tabs a.active{
+	color: #4770b2;
+	text-decoration: none;
+}
+
+/*intro page style*/
+.welcome h1{
+	text-align: center;
+	font-size: 10vmax;
+	color: #4770b2;
+  font-family: 'Montserrat', sans-serif;
+}
+.welcome h2{
+	font-size: 3vmax;
+	text-align: center;
+	padding-top: 3%;
+	margin-bottom: -5%;
+	color: black;
+	font-family: 'Convergence', sans-serif;
+}
+.welcome h3 {
+	font-size: 3vmax;
+	text-align: center;
+	margin-top: -5%;
+	padding-bottom: 3%;
+	color: black;
+	font-family: 'Convergence', sans-serif;
+}
+
+.explain p {
+	font-size: 1.5vmax;
+	color: #595a5b;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 3%;
+	padding-left: 12%;
+	padding-right: 10%;
+	text-align: left;
+	text-indent: -3%;
+	line-height: 2;
+}
+
+.explain span {
+	color: black;
+}
+
+#firstP {
+	padding-top: 3%;
+}
+
+#overview {
+	padding-top: 3%;
+	text-align: center;
+	color: black;
+}
+
+.explain a {
+	color: #4770b2;
+	font-size: 2vmax;
+	text-decoration: none;
+}
+
+#blueBar a {
+	color: white;
+	background-color: #4770b2;
+	font-size: 1.5vmax;
+	text-decoration: none;
+	float: right;
+	padding-right: 10%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Experience page style */
+.experienceContent h1{
+	text-align: center;
+	font-size: 6vmax;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1%;
+}
+
+.experienceContent h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.5vmax;
+	margin-left: 4%;
+}
+
+.experienceContent h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5vmax;
+	margin-left: 6%;
+}
+
+#firstH3 {
+	margin-top: -1%;
+}
+
+#bulletList {
+	padding-bottom: 3%;
+}
+
+#location {
+	font-size: 1.75vmax;
+	padding-left: 2%;
+}
+
+#date {
+	float: right;
+	padding-right: 5%;
+	font-size: 1.75vmax;
+}
+
+.experienceContent p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vmax;
+	margin-left: 6%;
+	margin-top: -2%;
+}
+
+.experienceContent li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vmax;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+}
+
+/*Examples page style */
+.exampleContent h1{
+	text-align: center;
+	font-size: 6vmax;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1%;
+}
+
+#exampleImg.center {
+    display: block;
+    margin:0 auto;
+		height: auto;
+		width: 40vw;
+		box-shadow: rgba(0,0,0,.25) 3px 5px 5px;
+}
+
+.previews  {
+	padding-bottom: 5%;
+}
+
+.previews h2 {
+	font-size: 3.0vw;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.previews h3 {
+	font-size: 1.5vw;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*contact page style*/
+.contactContent h1{
+	text-align: center;
+	font-size: 6vmax;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1%;
+}
+
+.contactContent h2 {
+	font-size: 1.75vw;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 8%;
+	text-indent: 4%;
+	line-height: 1.75;
+	padding-right: 10%;
+}
+
+#mailLink {
+	text-align: center;
+	font-size: 1.75vw;
+	text-decoration: none;
+	padding-left: 42vw;
+	color: #4770b2;
+	font-family: 'Roboto', sans-serif;
+}
