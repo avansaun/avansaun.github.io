@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+<title>Freeport Travel Planning</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="animate.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+</head>
+<body>
+
+	<div class="title" id="pageTitle">
+		<h1><br>Freeport Travel Planning</h1>
+		<div class="fadeIn">
+		<p>One office, worldwide locations.</p>
+		</div>
+	</div>
+
+	<div class = "menu">
+		<div class="iconHeader" id="menuIcon">
+			<a><i class="material-icons" style="font-size:55px;">menu</i></a>
+		</div>
+		<div class="drop-menu" id="menu">
+			<ul id="list">
+				<li><a href="#"><h3 id="top">Go To Top</h3></a></li>
+				<li><a href="#aboutDiv"><h3 id="about">About Us</h3></a></li>
+				<li><a href="#coastDiv"><h3 id="coastal">Coastal Trips</h3></a></li>
+				<li><a href="#wildDiv"><h3 id="wild">Wilderness Trips</h3></a></li>
+				<li><a href="#cityDiv"><h3 id="urban">Urban Trips</h3></a></li>
+				<li><a href="#regDiv"><h3 id="register">Sign Up</h3></a></li>
+				<li><a href="#contactDiv"><h3 id="contact">Contact Us</h3></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<a name="aboutDiv">
+	<div class="about">
+	</a>
+		<h1 align="center">A Little About Us...</h1>
+		<p>Freeport Travel Planning is an up and coming business dedicated to providing our
+				customers with trips that will make lifetime memories. We also believe that as many people
+				as possible should be able to experience the world around them, so we work with transportation,
+				lodging, and recreational companies to offer limited-time deals to you. When you schedule a
+				meeting with one of our friendly staff members, you'll get to choose from handpicked resorts and
+				itenaries, so you know your trip will be amazing.
+				<br></br>
+				We also put quality ahead of everything else we do, because our customers drive our business.
+				When you book your trip through us, you gain peace of mind with our extensive money-back guarantee, with refunds offered
+				up to the very day of the planned start of your trip. And once you initially book your trip, all of
+				our knowledgeable staff are just a phone call away, free of charge.</p>
+			</p>
+	</div>
+
+	<a name="coastDiv">
+	<div class="coastalInfo">
+	</a>
+	</div>
+		<div class="coastalOnImg">
+			<h1 align="center">Coastal Destinations</h1>
+			<div class="infoOnImg">
+				<h2 align="center">Hawaii. Australia. Puerto Rico. The Bahamas.</h2>
+					<div class="tint">
+					<p align="center">These are just a few of the amazing tropical vacation destinations we offer.
+							When you need to slow down in life and escape the stress of the world, heading to
+							the nearest ocean is a time-tested remedy. Relax on the beach, in your hotel room, or by
+							pool. Then rest some more, knowing we're behind you.
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a name="wildDiv">
+	<div class="wildInfo">
+	</a>
+		<div class="wildOnImg">
+			<h1 align="center">Wilderness Destinations</h1>
+			<div class="infoOnWildImg">
+				<h2 align="center">Forge your own path to adventure.</h2>
+					<div class="tint">
+					<p align="center">Some vacationers enjoy travelling to a place where they know their bed
+						will be made each day and waiters will bring them a drink. But others find inspiration
+						through nature and the countryside. If this describes you, we'll get you there. Schedule a meeting
+						today and you'll be immersed in the wilderness in no time.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<a name="cityDiv">
+	<div class="cityInfo">
+	</a>
+		<div class="cityOnImg">
+			<h1 align="center">Urban Destinations</h1>
+			<div class="infoOnCityImg">
+				<h2 align="center">Make the city yours.</h2>
+					<div class="tint">
+						<p align="center">Cities are huge urban jungles, just waiting to be explored. They also
+							promise endless experiences and dining options. Whatever your motivation is for venturing
+							to the city, our staff will work with you to ensure every hour is exciting.
+						</p>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<a name="regDiv">
+	<div class="signUp">
+	</a>
+		<h1 align="center">Ready To Go?</h1>
+		<h2 align="center">Schedule An Appointment</h2>
+		<div class="signUpForm">
+			<form action="#regDiv"method="post">
+  				<h3>Name:</h1><br>
+  				<input type="text" name="name" placeholder="John Doe"><br>
+  				<h3>Email:</h3><br>
+  				<input type="text" name="email" placeholder="myEmail@example.com"><br>
+				<input type="reset" value="Sign Me Up!" onclick="thanksMessage()">
+			</form>
+		</div>
+	</div>
+
+	<a name="contactDiv">
+	<div class="contactUs">
+	</a>
+		<h1 align="center">We Care What You Think!</h1>
+		<p>Our customers, including you, are what makes us who we are. We place an extreme importance
+			on the quality of the services we provide, and hope that you feel the same after working with us.
+			If you have any questions, concerns, or anything non-planning related to tell us, fill out the
+			form below and start a conversation with us.
+		</p>
+
+		<div class="messageForm">
+			<form action="#contactDiv"method="post">
+  				<h3>Name:</h1><br>
+  				<input type="text" name="name" placeholder="John Doe"><br>
+  				<h3>Email:</h3><br>
+  				<input type="text" name="email" placeholder="myEmail@example.com"><br>
+				<h3>Message:</h3><br>
+		      <textarea name="message" rows="10" cols="40"></textarea><br>
+				<input type="reset" value="Send Message" onclick="thanksMessage()">
+			</form>
+		</div>
+	</div>
+
+	<div class="footer">
+		<h2 align="right">Site created by Andrew Van Saun</h2>
+		<p align="right">This Freeport Travel Planning is a fictional company.</p>
+		<a href="#" align="left">Top of Page</a><br>
+		<a href="#aboutDiv" align="left">About Us</a><br>
+		<a href="#coastDiv" align="left">Coastal Destinations</a><br>
+		<a href="#wildDiv" align="left">Wilderness Destinations</a><br>
+		<a href="#cityDiv" align="left">Urban Destinations</a><br>
+		<a href="#regDiv" align="left">Book A Trip</a><br>
+		<a href="#contactDiv" align="left">Contact Us</a>
+	</div>
+
+
+</body>
