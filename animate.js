@@ -1,30 +1,30 @@
-var menuIsHidden = true;
-var width = $(window).width();
-var height = $(window).height();
 
-$(document).ready(function(){
-  $("#menu").hide();
-  $("#menuIcon").click(function(){
-      $("#menu").toggle(350);
-      $("#menuIcon").hide();
-  });
-  $("#menu").click(function(){
-    $("#menuIcon").show();
-    $("#menu").hide();
-  });
-});
-
-function thanksMessage() {
-    alert("Thank you! We will be in touch with you shortly.");
+function showAdditionalForm() {
+    var elem = document.getElementById('extraInfoContent');
+    var submitBasicBtn = document.getElementById('submitBasicBtn');
+    if (elem.style.display === 'none') {
+        elem.style.display = 'block';
+        submitBasicBtn.style.display = 'none';
+    } else {
+        elem.style.display = 'none';
+        submitBasicBtn.style.display = 'block';
+    }
 }
 
-/*$(document).mouseup(function (e) {
-    var container = $("#menu");
+function showBasicMessage() {
+  var sumitNotifBasic = document.getElementById('submitNotifBasic');
+  var sumitNotifExtra = document.getElementById('submitNotifExtra');
+  submitNotifBasic.style.color = 'green';
+  submitNotifExtra.style.color = 'white';
+}
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.hide();
-         $("menu").unbind( 'click', clickDocument );
-    }
-});*/
+function showExtraMessage() {
+  var sumitNotifExtra = document.getElementById('submitNotifExtra');
+  var sumitNotifBasic = document.getElementById('submitNotifBasic');
+  submitNotifExtra.style.color = 'green';
+  submitNotifBasic.style.color = 'white';
+}
+
+function exploreScrollDown() {
+  var targetY = document.getElementById('billB').scrollHeight;
+}

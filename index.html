@@ -1,161 +1,269 @@
-<!DOCTYPE html>
-<head>
-<title>Freeport Travel Planning</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="animate.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-</head>
-<body>
+<DOCTYPE! html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  </head>
+  </head>
+  <body>
+    <div class="mainContent">
 
-	<div class="title" id="pageTitle">
-		<h1><br>Freeport Travel Planning</h1>
-		<div class="fadeIn">
-		<p>One office, worldwide locations.</p>
-		</div>
-	</div>
+      <div class="billboard" id="billB">
+        <div class="tintLayer">
+          <div class="header">
+            <div class="logoBox">
+              <img src="images/freeportLogo.png"></img>
+            </div>
+            <div class="navContainer">
+              <!-- <a href="index.html" id="homeLink">Home</a> -->
+              <!-- <a href="about.html" id="aboutLink">About Us</a>
+              <a href="contact.html" id="contactLink">Contact Us</a> -->
+            </div>
+            <div class="mobileHeaderBar">
+              <img id="logo" src="images/freeportLogoBlack.png"></img>
+              <a href="javascript:dropdownMenu()"><img src="./images/list.png" id="menuIcon"/><br /><p>Menu</p></a>
+            </div>
+          </div>
 
-	<div class = "menu">
-		<div class="iconHeader" id="menuIcon">
-			<a><i class="material-icons" style="font-size:55px;">menu</i></a>
-		</div>
-		<div class="drop-menu" id="menu">
-			<ul id="list">
-				<li><a href="#"><h3 id="top">Go To Top</h3></a></li>
-				<li><a href="#aboutDiv"><h3 id="about">About Us</h3></a></li>
-				<li><a href="#coastDiv"><h3 id="coastal">Coastal Trips</h3></a></li>
-				<li><a href="#wildDiv"><h3 id="wild">Wilderness Trips</h3></a></li>
-				<li><a href="#cityDiv"><h3 id="urban">Urban Trips</h3></a></li>
-				<li><a href="#regDiv"><h3 id="register">Sign Up</h3></a></li>
-				<li><a href="#contactDiv"><h3 id="contact">Contact Us</h3></a></li>
-			</ul>
-		</div>
-	</div>
+          <div class="announcement">
+            <div class="titleText">
+              <h1>Freeport Travel Company</h1>
+              <h2>One office, worldwide locations.</h2>
+            </div>
+            <div class="actionButton">
+              <a href="javascript:void(0)">Explore<br />&darr;</a> <!--Down Arrow-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-	<a name="aboutDiv">
-	<div class="about">
-	</a>
-		<h1 align="center">A Little About Us...</h1>
-		<p>Freeport Travel Planning is an up and coming business dedicated to providing our
-				customers with trips that will make lifetime memories. We also believe that as many people
-				as possible should be able to experience the world around them, so we work with transportation,
-				lodging, and recreational companies to offer limited-time deals to you. When you schedule a
-				meeting with one of our friendly staff members, you'll get to choose from handpicked resorts and
-				itenaries, so you know your trip will be amazing.
-				<br></br>
-				We also put quality ahead of everything else we do, because our customers drive our business.
-				When you book your trip through us, you gain peace of mind with our extensive money-back guarantee, with refunds offered
-				up to the very day of the planned start of your trip. And once you initially book your trip, all of
-				our knowledgeable staff are just a phone call away, free of charge.</p>
-			</p>
-	</div>
+      <div class="sellPoints" id="sellP">
+        <div class="reasonContainerLeft">
+          <!--Image appears above text for smaller displays-->
+          <div class="mobileReasonImage" id="mobile1">
 
-	<a name="coastDiv">
-	<div class="coastalInfo">
-	</a>
-	</div>
-		<div class="coastalOnImg">
-			<h1 align="center">Coastal Destinations</h1>
-			<div class="infoOnImg">
-				<h2 align="center">Hawaii. Australia. Puerto Rico. The Bahamas.</h2>
-					<div class="tint">
-					<p align="center">These are just a few of the amazing tropical vacation destinations we offer.
-							When you need to slow down in life and escape the stress of the world, heading to
-							the nearest ocean is a time-tested remedy. Relax on the beach, in your hotel room, or by
-							pool. Then rest some more, knowing we're behind you.
-						</p>
-				</div>
-			</div>
-		</div>
-	</div>
+          </div>
+          <div class="reasonText">
+            <h1>We put the <span id="power">POWER</span><br /> in your hands</h1>
+            <p>It's your getaway, and you deserve to have full control over all the details. Our job at Freeport
+              Travel is to empower you to make them happen. We work tirelessly for our customers to uncover
+              an extensive selection of destinations, escursions, transportation, and boarding options, wherever
+              you want to go.</p>
+            </div>
+            <div class="reasonImage" id="leftImg1">
+            </div>
+          </div>
 
-	<a name="wildDiv">
-	<div class="wildInfo">
-	</a>
-		<div class="wildOnImg">
-			<h1 align="center">Wilderness Destinations</h1>
-			<div class="infoOnWildImg">
-				<h2 align="center">Forge your own path to adventure.</h2>
-					<div class="tint">
-					<p align="center">Some vacationers enjoy travelling to a place where they know their bed
-						will be made each day and waiters will bring them a drink. But others find inspiration
-						through nature and the countryside. If this describes you, we'll get you there. Schedule a meeting
-						today and you'll be immersed in the wilderness in no time.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+          <div class="reasonContainerRight">
+            <div class="reasonImage" id="rightImg2">
+            </div>
+            <div class="mobileReasonImage" id="mobile2"> <!--Image for smaller displays-->
+            </div>
+            <div class="reasonText">
+              <h1>Take <span id="uncertainty">uncertainty</span> out of the equation</h1>
+              <p>Relaxation. Peace of mind. Rest. We're guessing that you want these when you travel. We do too,
+                which is why we structured our business model around eliminating risk to you, our customers. When you
+                book with us, you can have complete assurance that your trip will go on. We intervene with hotels, transportation,
+                and excursion companies on your behalf if you aren't satisfied with them, and will do our best to make things smooth.
+              </p>
+            </div>
+          </div>
 
-	<a name="cityDiv">
-	<div class="cityInfo">
-	</a>
-		<div class="cityOnImg">
-			<h1 align="center">Urban Destinations</h1>
-			<div class="infoOnCityImg">
-				<h2 align="center">Make the city yours.</h2>
-					<div class="tint">
-						<p align="center">Cities are huge urban jungles, just waiting to be explored. They also
-							promise endless experiences and dining options. Whatever your motivation is for venturing
-							to the city, our staff will work with you to ensure every hour is exciting.
-						</p>
-					</div>
-				</div>
-			</div>
-	</div>
+          <div class="reasonContainerLeft">
+            <!--Image appears above text for smaller displays-->
+            <div class="mobileReasonImage" id="mobile3">
+            </div>
+            <div class="reasonText">
+              <h1>Your <span id="wallet">wallet</span> will thank you too</h1>
+              <p>Why spend more than you need to? We partner with a wide selection of companies in the
+                transportation, hotel, and recreation industries to pass on the deals we get straight to you, which
+                means you could save up to <b>40%</b> on your next trip.</p>
+              </div>
+              <div class="reasonImage" id="leftImg3">
+              </div>
+            </div>
+          </div>
 
-	<a name="regDiv">
-	<div class="signUp">
-	</a>
-		<h1 align="center">Ready To Go?</h1>
-		<h2 align="center">Schedule An Appointment</h2>
-		<div class="signUpForm">
-			<form action="#regDiv"method="post">
-  				<h3>Name:</h1><br>
-  				<input type="text" name="name" placeholder="John Doe"><br>
-  				<h3>Email:</h3><br>
-  				<input type="text" name="email" placeholder="myEmail@example.com"><br>
-				<input type="reset" value="Sign Me Up!" onclick="thanksMessage()">
-			</form>
-		</div>
-	</div>
+          <div class="tripShowcase">
+            <div class="textDescription">
+              <h1>Go Anywhere</h1>
+              <h3>Featured Destinations</h3>
+            </div>
+            <div class="showcaseGrid">
 
-	<a name="contactDiv">
-	<div class="contactUs">
-	</a>
-		<h1 align="center">We Care What You Think!</h1>
-		<p>Our customers, including you, are what makes us who we are. We place an extreme importance
-			on the quality of the services we provide, and hope that you feel the same after working with us.
-			If you have any questions, concerns, or anything non-planning related to tell us, fill out the
-			form below and start a conversation with us.
-		</p>
+              <div class="ts1">
+                <h2>Yosemite</h2>
+                <div class="tripSquare">
+                  <img src="images/yosemite.jpeg" style="height: 100%"/>
+                </div>
+              </div>
 
-		<div class="messageForm">
-			<form action="#contactDiv"method="post">
-  				<h3>Name:</h1><br>
-  				<input type="text" name="name" placeholder="John Doe"><br>
-  				<h3>Email:</h3><br>
-  				<input type="text" name="email" placeholder="myEmail@example.com"><br>
-				<h3>Message:</h3><br>
-		      <textarea name="message" rows="10" cols="40"></textarea><br>
-				<input type="reset" value="Send Message" onclick="thanksMessage()">
-			</form>
-		</div>
-	</div>
+              <div class="ts2">
+                <h2>Caribbean</h2>
+                <div class="tripSquare">
+                  <img src="images/caribbean.jpeg" style="height: 100%"/>
+                </div>
+              </div>
 
-	<div class="footer">
-		<h2 align="right">Site created by Andrew Van Saun</h2>
-		<p align="right">This Freeport Travel Planning is a fictional company.</p>
-		<a href="#" align="left">Top of Page</a><br>
-		<a href="#aboutDiv" align="left">About Us</a><br>
-		<a href="#coastDiv" align="left">Coastal Destinations</a><br>
-		<a href="#wildDiv" align="left">Wilderness Destinations</a><br>
-		<a href="#cityDiv" align="left">Urban Destinations</a><br>
-		<a href="#regDiv" align="left">Book A Trip</a><br>
-		<a href="#contactDiv" align="left">Contact Us</a>
-	</div>
+              <div class="ts3">
+                <h2>Toronto</h2>
+                <div class="tripSquare">
+                  <img src="images/toronto.jpeg" style="height: 100%"/>
+                </div>
+              </div>
 
+              <div class="ts4">
+                <h2>Singapore</h2>
+                <div class="tripSquare">
+                  <img src="images/singapore.jpeg" style="height: 100%"/>
+                </div>
+              </div>
 
-</body>
+              <div class="ts5">
+                <h2>Rio de Jainero</h2>
+                <div class="tripSquare">
+                  <img src="images/rio.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts6">
+                <h2>Germany</h2>
+                <div class="tripSquare">
+                  <img src="images/germany.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts7">
+                <h2>Venice</h2>
+                <div class="tripSquare">
+                  <img src="images/venice.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts8">
+                <h2>London</h2>
+                <div class="tripSquare">
+                  <img src="images/london.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts9">
+                <h2>Australia</h2>
+                <div class="tripSquare">
+                  <img src="images/australia.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="appointmentContainer">
+            <h1>Your Trip Starts Here</h1>
+            <h2>Schedule an appointment</h2>
+            <form class="scheduleForm">
+              <div class="formWrapper">
+                <div class="inpContainer">
+                  <span>
+                    First Name:
+                  </span>
+                  <input class="scheduleInput" placeholder="First Name"/>
+                </div>
+                <div class="inpContainer">
+                  <span>
+                    Last Name:
+                  </span>
+                  <input class="scheduleInput" placeholder="Last Name"/>
+                </div>
+                <div class="inpContainer">
+                  <span>
+                    Email:
+                  </span>
+                  <input class="scheduleInput" placeholder="Email"/>
+                </div>
+                <div class="inpContainer">
+                  <span>
+                    Phone:
+                  </span>
+                  <input class="scheduleInput" placeholder="(555) 555-5555"/>
+                </div>
+                <button type="button" id="submitBasicBtn"  onclick="showBasicMessage()">Submit</button>
+                <p id="submitNotifBasic">Thanks, we look forward to working with you!</p>
+              </div>
+            </form>
+
+            <h2>Additional Details</h2>
+            <p>
+              If you'd like the appointment to be more efficient,
+              tell us a bit more about what you are looking for in advance
+            </p>
+            <a href="javascript:showAdditionalForm()" id="addLink"><button id="#addLinkButton">+ Additional Info</button></a>
+            <div class="extraInfo" id="extraInfoContent" style="display: none;">
+              <form class="scheduleForm">
+                <div class="formWrapper">
+                  <div class="inpContainer">
+                    <span>
+                      Trip Start Date:
+                    </span>
+                    <input class="scheduleInput" type="Date" placeholder="MM/DD/YYYY"/>
+                  </div>
+                  <div class="inpContainer">
+                    <span>
+                      Trip End Date:
+                    </span>
+                    <input class="scheduleInput" type="Date" placeholder="MM/DD/YYYY"/>
+                  </div>
+                  <div class="inpContainer">
+                    <span>
+                      Destination(s):
+                    </span>
+                    <input class="scheduleInput" placeholder="Destination(s)"/>
+                  </div>
+              <div class="inpContainer">
+                <span>
+                  Other Information:
+                </span>
+                <textarea class="scheduleInput" rows="5" cols="8"></textarea>
+              </div>
+              <button type="button" id="submitExtraBtn" onclick="showExtraMessage()">Submit</button>
+              <p id="submitNotifExtra">Thanks, we look forward to working with you!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+      <h2>Website created by Andrew Van Saun</h2>
+      <h3>This Freeport Travel Company is fictional, and is not intended to identify as a real company.</h3>
+      <h3>All images used are under the Creative Commons Zero (CC0) license.</h3>
+      <h3 id="attr">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h3>
+      <h3 id="attr">Icons made by <a href="https://www.flaticon.com/authors/chanut-is-industries" title="Chanut is Industries">Chanut is Industries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h3>
+    </div>
+  </body>
+</html>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+  window.sr = ScrollReveal();
+
+  $(document).ready(function() {
+    $(".actionButton").click(function() {
+      $('html, body').animate({
+        scrollTop: $(".sellPoints").offset().top
+      }, 800);
+    });
+
+    // if ($(window).width() > 900) {
+    //   $(".tripSquare").click(function() {
+    //     $('html, body').animate({
+    //       scrollTop: $(".appointmentContainer").offset().top
+    //     }, 800);
+    //   });
+    // }
+  });
+
+</script>

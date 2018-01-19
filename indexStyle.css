@@ -1,0 +1,493 @@
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-bottom: 50px;
+}
+body .mainContent {
+  min-height: 50px;
+}
+body .billboard {
+  position: relative;
+  height: 800px;
+  height: 100vh;
+  background-image: url('images/planning-min-min.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+body .billboard img {
+  height: auto;
+  width: 150px;
+}
+body .billboard .tintLayer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body .billboard .header {
+  display: flex;
+  flex-wrap: none;
+  height: 60px;
+}
+body .billboard .header .logoBox {
+  width: 15%;
+  margin-left: 5%;
+}
+body .billboard .header .navContainer {
+  width: 60%;
+  margin-left: 15%;
+  text-align: right;
+}
+body .billboard .header .navContainer a {
+  text-decoration: none;
+  color: white;
+  line-height: 60px;
+  vertical-align: middle;
+  margin-left: 5%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+body .billboard .header .mobileHeaderBar {
+  display: none;
+}
+body .billboard .announcement .titleText {
+  text-align: center;
+  color: white;
+}
+body .billboard .announcement .titleText h1 {
+  margin-top: 30vh;
+  font-size: 50px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: lighter;
+}
+body .billboard .announcement .titleText h2 {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Oxygen', sans-serif;
+}
+body .billboard .announcement .actionButton {
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  /* Firefox */
+  -webkit-animation: fadein 3s;
+  /* Safari and Chrome */
+  -o-animation: fadein 3s;
+  /* Opera */
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+}
+body .billboard .announcement .actionButton a {
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+body .billboard .announcement .actionButton a:hover {
+  text-shadow: 4px 4px 2px black;
+}
+body .sellPoints {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: #3c80c4;
+}
+body .sellPoints .reasonContainerRight,
+body .sellPoints .reasonContainerLeft {
+  margin-bottom: 150px;
+}
+body .sellPoints .reasonContainerRight h1,
+body .sellPoints .reasonContainerLeft h1 {
+  font-size: 40px;
+}
+body .sellPoints .reasonContainerRight #power,
+body .sellPoints .reasonContainerLeft #power {
+  color: #F4E598;
+}
+body .sellPoints .reasonContainerRight #uncertainty,
+body .sellPoints .reasonContainerLeft #uncertainty {
+  color: #CEE8FA;
+}
+body .sellPoints .reasonContainerRight #wallet,
+body .sellPoints .reasonContainerLeft #wallet {
+  color: #E8679C;
+}
+body .sellPoints .reasonContainerRight p,
+body .sellPoints .reasonContainerLeft p {
+  font-size: 20px;
+  line-height: 2;
+}
+body .sellPoints .reasonContainerRight .reasonText,
+body .sellPoints .reasonContainerLeft .reasonText {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 400;
+}
+body .sellPoints .reasonContainerRight .reasonText b,
+body .sellPoints .reasonContainerLeft .reasonText b {
+  font-size: 23px;
+}
+body .sellPoints .reasonContainerRight #leftImg1,
+body .sellPoints .reasonContainerLeft #leftImg1,
+body .sellPoints .reasonContainerRight #mobile1,
+body .sellPoints .reasonContainerLeft #mobile1 {
+  background-image: url('images/electricity.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+body .sellPoints .reasonContainerRight #rightImg2,
+body .sellPoints .reasonContainerLeft #rightImg2,
+body .sellPoints .reasonContainerRight #mobile2,
+body .sellPoints .reasonContainerLeft #mobile2 {
+  background-image: url('images/shieldBlue.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+body .sellPoints .reasonContainerRight #leftImg3,
+body .sellPoints .reasonContainerLeft #leftImg3,
+body .sellPoints .reasonContainerRight #mobile3,
+body .sellPoints .reasonContainerLeft #mobile3 {
+  background-image: url('images/piggy-bank.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+body .tripShowcase {
+  margin-top: 50px;
+}
+body .tripShowcase .textDescription {
+  text-align: center;
+}
+body .tripShowcase .textDescription h1 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: lighter;
+  font-size: 85px;
+}
+body .tripShowcase .textDescription h3 {
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: 'Oxygen', sans-serif;
+}
+body .tripShowcase .showcaseGrid {
+  display: grid;
+  width: 100%;
+}
+body .tripShowcase .showcaseGrid h2 {
+  position: absolute;
+  color: white;
+  z-index: 10000 !important;
+  font-size: 50px !important;
+  left: 20px;
+  font-family: 'Oxygen', sans-serif;
+  text-shadow: 5px 5px solid gray;
+}
+body .tripShowcase .showcaseGrid .tripSquare:hover {
+  color: white !important;
+  width: 100%;
+  text-align: center;
+}
+body .tripShowcase .showcaseGrid .ts1,
+body .tripShowcase .showcaseGrid .ts2,
+body .tripShowcase .showcaseGrid .ts3,
+body .tripShowcase .showcaseGrid .ts4,
+body .tripShowcase .showcaseGrid .ts5,
+body .tripShowcase .showcaseGrid .ts6,
+body .tripShowcase .showcaseGrid .ts7,
+body .tripShowcase .showcaseGrid .ts8,
+body .tripShowcase .showcaseGrid .ts9 {
+  overflow: hidden;
+  position: relative;
+}
+body .tripShowcase .showcaseGrid .ts1 img,
+body .tripShowcase .showcaseGrid .ts2 img,
+body .tripShowcase .showcaseGrid .ts3 img,
+body .tripShowcase .showcaseGrid .ts4 img,
+body .tripShowcase .showcaseGrid .ts5 img,
+body .tripShowcase .showcaseGrid .ts6 img,
+body .tripShowcase .showcaseGrid .ts7 img,
+body .tripShowcase .showcaseGrid .ts8 img,
+body .tripShowcase .showcaseGrid .ts9 img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  z-index: 1 !important;
+}
+body .tripShowcase .showcaseGrid .ts1 img:hover,
+body .tripShowcase .showcaseGrid .ts2 img:hover,
+body .tripShowcase .showcaseGrid .ts3 img:hover,
+body .tripShowcase .showcaseGrid .ts4 img:hover,
+body .tripShowcase .showcaseGrid .ts5 img:hover,
+body .tripShowcase .showcaseGrid .ts6 img:hover,
+body .tripShowcase .showcaseGrid .ts7 img:hover,
+body .tripShowcase .showcaseGrid .ts8 img:hover,
+body .tripShowcase .showcaseGrid .ts9 img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: 0.8s;
+  position: relative;
+  cursor: pointer;
+  filter: brightness(0.5);
+  -webkit-filter: brightness(0.5);
+}
+body .appointmentContainer {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  width: 100%;
+}
+body .appointmentContainer h1,
+body .appointmentContainer h2,
+body .appointmentContainer p {
+  text-align: center;
+}
+body .appointmentContainer h1 {
+  font-family: 'Cabin', sans-serif;
+  font-weight: lighter;
+  font-size: 85px;
+}
+body .appointmentContainer h2 {
+  font-weight: lighter;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 30px;
+}
+body .appointmentContainer p {
+  font-family: 'Oxygen', sans-serif;
+}
+body .appointmentContainer form {
+  display: block;
+  width: 100%;
+  align-items: center;
+}
+body .appointmentContainer form .formWrapper {
+  width: 350px;
+  margin-left: calc(50% - 150px);
+}
+body .appointmentContainer form .inpContainer {
+  width: 100%;
+  height: 25px;
+  margin-top: 15px;
+}
+body .appointmentContainer form .inpContainer span {
+  font-size: 17px;
+  float: left;
+  font-family: 'Oxygen', sans-serif;
+}
+body .appointmentContainer form .inpContainer input,
+body .appointmentContainer form .inpContainer textarea {
+  float: right;
+  border: 0;
+  border-bottom: 1px solid gray;
+  transition: 0.5s;
+  font-size: 17px;
+  width: 200px;
+}
+body .appointmentContainer form .inpContainer textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid gray;
+}
+body .appointmentContainer form .inpContainer input:focus,
+body .appointmentContainer form .inpContainer textarea:focus {
+  outline: none;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid black;
+}
+body .appointmentContainer form #submitBasicBtn,
+body .appointmentContainer form #submitExtraBtn {
+  margin-top: 20px;
+  background-color: rgba(60, 128, 196, 0.5);
+  color: black;
+  border: 2px solid #3c80c4;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 7px;
+}
+body .appointmentContainer form #submitBasicBtn:hover,
+body .appointmentContainer form #submitExtraBtn:hover {
+  background-color: #3c80c4;
+  color: white;
+}
+body .appointmentContainer #submitNotifBasic,
+body .appointmentContainer #submitNotifExtra {
+  color: white;
+}
+body .appointmentContainer #addLink {
+  margin: 0  auto;
+  text-align: center;
+  align-self: center;
+  display: block;
+}
+body .appointmentContainer #addLink button {
+  margin-top: 20px;
+  background-color: rgba(60, 128, 196, 0.5);
+  color: black;
+  border: 2px solid #3c80c4;
+  border-radius: 7px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+body .appointmentContainer #addLink button:hover {
+  background-color: #3c80c4;
+  color: white;
+}
+body .appointmentContainer #extraInfoContent {
+  display: none;
+}
+body .footer {
+  height: 90px;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  color: white;
+  font-size: 0.5em;
+  text-decoration: none;
+  padding-bottom: 5px;
+  line-height: 0.8;
+}
+body .footer a {
+  color: white;
+}
+@media (max-width: 767px) {
+  .sellPoints .reasonContainerLeft,
+  .sellPoints .reasonContainerRight {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .sellPoints .reasonContainerLeft .mobileReasonImage,
+  .sellPoints .reasonContainerRight .mobileReasonImage,
+  .sellPoints .reasonContainerLeft .reasonImage,
+  .sellPoints .reasonContainerRight .reasonImage {
+    display: block;
+    width: 100%;
+    height: 30vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sellPoints .reasonContainerLeft .reasonText,
+  .sellPoints .reasonContainerRight .reasonText {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .sellPoints .reasonContainerLeft #leftImg1,
+  .sellPoints .reasonContainerRight #leftImg1,
+  .sellPoints .reasonContainerLeft #leftImg3,
+  .sellPoints .reasonContainerRight #leftImg3,
+  .sellPoints .reasonContainerLeft #rightImg2,
+  .sellPoints .reasonContainerRight #rightImg2 {
+    display: none;
+  }
+  .tripShowcase .showcaseGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tripShowcase .showcaseGrid .tripSquare {
+    height: 100vw;
+  }
+  .appointmentContainer .formWrapper {
+    width: 90vw !important;
+    margin-left: 5vw !important;
+  }
+}
+@media (min-width: 768px) {
+  .sellPoints .reasonContainerRight,
+  .sellPoints .reasonContainerLeft {
+    display: flex;
+    flex-wrap: none;
+  }
+  .sellPoints .reasonContainerRight .mobileReasonImage,
+  .sellPoints .reasonContainerLeft .mobileReasonImage {
+    display: none;
+  }
+  .sellPoints .reasonContainerRight #leftImg1,
+  .sellPoints .reasonContainerLeft #leftImg1,
+  .sellPoints .reasonContainerRight #leftImg3,
+  .sellPoints .reasonContainerLeft #leftImg3,
+  .sellPoints .reasonContainerRight #rightImg2,
+  .sellPoints .reasonContainerLeft #rightImg2 {
+    display: block;
+  }
+  .sellPoints .reasonContainerRight .reasonText,
+  .sellPoints .reasonContainerLeft .reasonText {
+    width: 45%;
+  }
+  .sellPoints .reasonContainerRight .reasonText h1,
+  .sellPoints .reasonContainerLeft .reasonText h1 {
+    font-size: 50px;
+  }
+  .sellPoints .reasonContainerRight .reasonImage,
+  .sellPoints .reasonContainerLeft .reasonImage {
+    width: 30%;
+  }
+  .sellPoints .reasonContainerLeft .reasonText {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .sellPoints .reasonContainerLeft .reasonImage {
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .sellPoints .reasonContainerRight .reasonText {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .sellPoints .reasonContainerRight .reasonImage {
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  .tripShowcase {
+    overflow-x: hidden;
+  }
+  .tripShowcase .showcaseGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tripShowcase .showcaseGrid .tripSquare {
+    text-align: center;
+    height: 33vw;
+  }
+}
