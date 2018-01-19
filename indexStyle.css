@@ -25,7 +25,7 @@ body .billboard {
   position: relative;
   height: 800px;
   height: 100vh;
-  background-image: url('images/planning-min-min.jpeg');
+  background-image: url('Images/planning-min-min.jpeg');
   background-size: cover;
   background-position: center;
 }
@@ -150,7 +150,7 @@ body .sellPoints .reasonContainerRight #leftImg1,
 body .sellPoints .reasonContainerLeft #leftImg1,
 body .sellPoints .reasonContainerRight #mobile1,
 body .sellPoints .reasonContainerLeft #mobile1 {
-  background-image: url('images/electricity.png');
+  background-image: url('Images/electricity.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -159,7 +159,7 @@ body .sellPoints .reasonContainerRight #rightImg2,
 body .sellPoints .reasonContainerLeft #rightImg2,
 body .sellPoints .reasonContainerRight #mobile2,
 body .sellPoints .reasonContainerLeft #mobile2 {
-  background-image: url('images/shieldBlue.png');
+  background-image: url('Images/shieldBlue.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -168,7 +168,7 @@ body .sellPoints .reasonContainerRight #leftImg3,
 body .sellPoints .reasonContainerLeft #leftImg3,
 body .sellPoints .reasonContainerRight #mobile3,
 body .sellPoints .reasonContainerLeft #mobile3 {
-  background-image: url('images/piggy-bank.png');
+  background-image: url('Images/piggy-bank.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
