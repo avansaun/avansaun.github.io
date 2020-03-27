@@ -1,0 +1,269 @@
+<DOCTYPE! html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <script src="animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  </head>
+  </head>
+  <body>
+    <div class="mainContent">
+
+      <div class="billboard" id="billB">
+        <div class="tintLayer">
+          <div class="header">
+            <div class="logoBox">
+              <img src="Images/freeportLogo.png"></img>
+            </div>
+            <div class="navContainer">
+              <!-- <a href="index.html" id="homeLink">Home</a> -->
+              <!-- <a href="about.html" id="aboutLink">About Us</a>
+              <a href="contact.html" id="contactLink">Contact Us</a> -->
+            </div>
+            <div class="mobileHeaderBar">
+              <img id="logo" src="Images/freeportLogoBlack.png"></img>
+              <a href="javascript:dropdownMenu()"><img src="Images/list.png" id="menuIcon"/><br /><p>Menu</p></a>
+            </div>
+          </div>
+
+          <div class="announcement">
+            <div class="titleText">
+              <h1>Freeport Travel Company</h1>
+              <h2>One office, worldwide locations.</h2>
+            </div>
+            <div class="actionButton">
+              <a href="javascript:void(0)">Explore<br />&darr;</a> <!--Down Arrow-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sellPoints" id="sellP">
+        <div class="reasonContainerLeft">
+          <!--Image appears above text for smaller displays-->
+          <div class="mobileReasonImage" id="mobile1">
+
+          </div>
+          <div class="reasonText">
+            <h1>We put the <span id="power">POWER</span><br /> in your hands</h1>
+            <p>It's your getaway, and you deserve to have full control over all the details. Our job at Freeport
+              Travel is to empower you to make them happen. We work tirelessly for our customers to uncover
+              an extensive selection of destinations, escursions, transportation, and boarding options, wherever
+              you want to go.</p>
+            </div>
+            <div class="reasonImage" id="leftImg1">
+            </div>
+          </div>
+
+          <div class="reasonContainerRight">
+            <div class="reasonImage" id="rightImg2">
+            </div>
+            <div class="mobileReasonImage" id="mobile2"> <!--Image for smaller displays-->
+            </div>
+            <div class="reasonText">
+              <h1>Take <span id="uncertainty">uncertainty</span> out of the equation</h1>
+              <p>Relaxation. Peace of mind. Rest. We're guessing that you want these when you travel. We do too,
+                which is why we structured our business model around eliminating risk to you, our customers. When you
+                book with us, you can have complete assurance that your trip will go on. We intervene with hotels, transportation,
+                and excursion companies on your behalf if you aren't satisfied with them, and will do our best to make things smooth.
+              </p>
+            </div>
+          </div>
+
+          <div class="reasonContainerLeft">
+            <!--Image appears above text for smaller displays-->
+            <div class="mobileReasonImage" id="mobile3">
+            </div>
+            <div class="reasonText">
+              <h1>Your <span id="wallet">wallet</span> will thank you too</h1>
+              <p>Why spend more than you need to? We partner with a wide selection of companies in the
+                transportation, hotel, and recreation industries to pass on the deals we get straight to you, which
+                means you could save up to <b>40%</b> on your next trip.</p>
+              </div>
+              <div class="reasonImage" id="leftImg3">
+              </div>
+            </div>
+          </div>
+
+          <div class="tripShowcase">
+            <div class="textDescription">
+              <h1>Go Anywhere</h1>
+              <h3>Featured Destinations</h3>
+            </div>
+            <div class="showcaseGrid">
+
+              <div class="ts1">
+                <h2>Yosemite</h2>
+                <div class="tripSquare">
+                  <img src="Images/yosemite.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts2">
+                <h2>Caribbean</h2>
+                <div class="tripSquare">
+                  <img src="Images/caribbean.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts3">
+                <h2>Toronto</h2>
+                <div class="tripSquare">
+                  <img src="Images/toronto.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts4">
+                <h2>Singapore</h2>
+                <div class="tripSquare">
+                  <img src="Images/singapore.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts5">
+                <h2>Rio de Jainero</h2>
+                <div class="tripSquare">
+                  <img src="Images/rio.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts6">
+                <h2>Germany</h2>
+                <div class="tripSquare">
+                  <img src="Images/germany.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts7">
+                <h2>Venice</h2>
+                <div class="tripSquare">
+                  <img src="Images/venice.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts8">
+                <h2>London</h2>
+                <div class="tripSquare">
+                  <img src="Images/london.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+              <div class="ts9">
+                <h2>Australia</h2>
+                <div class="tripSquare">
+                  <img src="Images/australia.jpeg" style="height: 100%"/>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="appointmentContainer">
+            <h1>Your Trip Starts Here</h1>
+            <h2>Schedule an appointment</h2>
+            <form class="scheduleForm">
+              <div class="formWrapper">
+                <div class="inpContainer">
+                  <span>
+                    First Name:
+                  </span>
+                  <input class="scheduleInput" placeholder="First Name"/>
+                </div>
+                <div class="inpContainer">
+                  <span>
+                    Last Name:
+                  </span>
+                  <input class="scheduleInput" placeholder="Last Name"/>
+                </div>
+                <div class="inpContainer">
+                  <span>
+                    Email:
+                  </span>
+                  <input class="scheduleInput" placeholder="Email"/>
+                </div>
+                <div class="inpContainer">
+                  <span>
+                    Phone:
+                  </span>
+                  <input class="scheduleInput" placeholder="(555) 555-5555"/>
+                </div>
+                <button type="button" id="submitBasicBtn"  onclick="showBasicMessage()">Submit</button>
+                <p id="submitNotifBasic">Thanks, we look forward to working with you!</p>
+              </div>
+            </form>
+
+            <h2>Additional Details</h2>
+            <p>
+              If you'd like the appointment to be more efficient,
+              tell us a bit more about what you are looking for in advance
+            </p>
+            <a href="javascript:showAdditionalForm()" id="addLink"><button id="#addLinkButton">+ Additional Info</button></a>
+            <div class="extraInfo" id="extraInfoContent" style="display: none;">
+              <form class="scheduleForm">
+                <div class="formWrapper">
+                  <div class="inpContainer">
+                    <span>
+                      Trip Start Date:
+                    </span>
+                    <input class="scheduleInput" type="Date" placeholder="MM/DD/YYYY"/>
+                  </div>
+                  <div class="inpContainer">
+                    <span>
+                      Trip End Date:
+                    </span>
+                    <input class="scheduleInput" type="Date" placeholder="MM/DD/YYYY"/>
+                  </div>
+                  <div class="inpContainer">
+                    <span>
+                      Destination(s):
+                    </span>
+                    <input class="scheduleInput" placeholder="Destination(s)"/>
+                  </div>
+              <div class="inpContainer">
+                <span>
+                  Other Information:
+                </span>
+                <textarea class="scheduleInput" rows="5" cols="8"></textarea>
+              </div>
+              <button type="button" id="submitExtraBtn" onclick="showExtraMessage()">Submit</button>
+              <p id="submitNotifExtra">Thanks, we look forward to working with you!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+      <h2>Website created by Andrew Van Saun</h2>
+      <h3>This Freeport Travel Company is fictional, and is not intended to identify as a real company.</h3>
+      <h3>All images used are under the Creative Commons Zero (CC0) license.</h3>
+      <h3 id="attr">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h3>
+      <h3 id="attr">Icons made by <a href="https://www.flaticon.com/authors/chanut-is-industries" title="Chanut is Industries">Chanut is Industries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h3>
+    </div>
+  </body>
+</html>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+  window.sr = ScrollReveal();
+
+  $(document).ready(function() {
+    $(".actionButton").click(function() {
+      $('html, body').animate({
+        scrollTop: $(".sellPoints").offset().top
+      }, 800);
+    });
+
+    // if ($(window).width() > 900) {
+    //   $(".tripSquare").click(function() {
+    //     $('html, body').animate({
+    //       scrollTop: $(".appointmentContainer").offset().top
+    //     }, 800);
+    //   });
+    // }
+  });
+
+</script>
