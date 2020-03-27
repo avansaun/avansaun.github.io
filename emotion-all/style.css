@@ -1,0 +1,67 @@
+.topLinks a {
+  float: right;
+  margin-right: 5vw;
+  margin-top: 2vh;
+  color: black;
+}
+
+.topLinksAbout {
+  color: black;
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+
+.mainContainer {
+  background-color: gray;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mainContainerAbout {
+  /*Background pattern from Subtle Patterns (www.toptal.com)*/
+  background-image: url('images/light_wool.png');
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-top: 15vh;
+}
+.titleContainer h1 {
+  font-size: 5em;
+}
+.titleContainer h2 {
+  font-size: 1.5em;
+}
+
+.titleContainerAbout h1 {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 8vh;
+}
+
+.explain {
+  margin-left: 10vw;
+  width: 80vw;
+  text-indent: -20px;
+}
+.explain p {
+  margin-top: 50px;
+}
+
+.mainReport h2 {
+  font-size: 1.25em;
+  position: absolute;
+  left: 5vw;
+  bottom: 5vh;
+}
+#worldMoodText {
+  font-size: 1.5em;
+  margin-left: 5px;
+  padding-bottom: 4px;
+  border-bottom: 2.5px solid black;
+}
