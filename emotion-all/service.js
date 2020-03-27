@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  console.log("HERE");
   requestData("worldEmotion");
 });
 
@@ -38,6 +39,7 @@ function requestData(whatToFetch, emotion) {
 }
 
 function setMood(emotionToShow) {
+  console.log("emotionToShow");
   if (emotionToShow === "joy") {
     $(".mainContainer").css('background-color', 'rgba(230,230,0,0.7)');
     $("#worldMoodText").append("Joy");
