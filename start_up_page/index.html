@@ -1,0 +1,20 @@
+<DOCTYPE! html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="code.js"></script>
+  <script src="moment.min.js"></script>
+</head>
+<body>
+  <div class="timeDisplayContainer">
+    <p id="time"></p>
+
+  </div>
+
+  <script>
+    var myVar = setInterval(getTheTime, 1000);
+    getTheTime();
+    getHexEquivalent();
+  </script>
+
+</body>
+</html>

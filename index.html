@@ -1,269 +1,195 @@
-<DOCTYPE! html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="indexStyle.css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    <script src="animate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  </head>
-  </head>
-  <body>
-    <div class="mainContent">
+<!DOCTYPE html>
 
-      <div class="billboard" id="billB">
-        <div class="tintLayer">
-          <div class="header">
-            <div class="logoBox">
-              <img src="Images/freeportLogo.png"></img>
-            </div>
-            <div class="navContainer">
-              <!-- <a href="index.html" id="homeLink">Home</a> -->
-              <!-- <a href="about.html" id="aboutLink">About Us</a>
-              <a href="contact.html" id="contactLink">Contact Us</a> -->
-            </div>
-            <div class="mobileHeaderBar">
-              <img id="logo" src="Images/freeportLogoBlack.png"></img>
-              <a href="javascript:dropdownMenu()"><img src="Images/list.png" id="menuIcon"/><br /><p>Menu</p></a>
-            </div>
-          </div>
+<head>
+  <title>Web Development Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Convergence|Montserrat:700|Roboto' rel='stylesheet'>
+</head>
 
-          <div class="announcement">
-            <div class="titleText">
-              <h1>Freeport Travel Company</h1>
-              <h2>One office, worldwide locations.</h2>
-            </div>
-            <div class="actionButton">
-              <a href="javascript:void(0)">Explore<br />&darr;</a> <!--Down Arrow-->
-            </div>
-          </div>
-        </div>
+<body>
+  <div class="header">
+    <div class="tabs">
+      <ul id="navLinks">
+        <li id="logo">AVS</li>
+        <li><a href="javascript:void(0)" id="experience">Experience</a></li>
+        <li><a href="javascript:void(0)"id="examples">My Work</a></li>
+        <li><a href="javascript:void(0)"id="contact">Contact Me</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="welcome">
+    <h2>Hi, my name is</h2>
+    <h1>Andrew <span class="avoidwrap">Van Saun</span></h1>
+    <h3 id="typeOut">and I'm a front-end web developer.</h3>
+  </div>
+  <div class="explain">
+    <h1 id="explainTitle">A Little About Me</h1>
+    <div class="slider1">
+      <p id="slider1Content">
+        <span>I'm passionate about web development,</span> especially on the front-end side. To
+        me, there are few things more satisfying than watching a website come
+        to life with a clean and beautiful interface.
+      </p>
+    </div>
+    <div class="slider2">
+      <p id="slider2Content">
+        I'm currently finishing up my Bachelor's degree in <span>Computer Science at Sacramento State University,</span> and
+        am graduating in December 2017.
+      </p>
+    </div>
+    <div class="slider3">
+      <p id="slider3Content">
+        When I'm not coding, you can catch me doing many different things, including
+        <span>snowboarding, surfing, golfing, playing guitar, </span>and <span>dreaming about getting
+          my pilot's license.</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="thinkGroup">
+    <div class="thinkCode">
+      <div class="headerText">
+        <h1 id="codeHeader">I think in <span id="code">code</span>
+          <h2 id="createFade">and <span id="create">creativity</span</h2>
+        </h1>
       </div>
-
-      <div class="sellPoints" id="sellP">
-        <div class="reasonContainerLeft">
-          <!--Image appears above text for smaller displays-->
-          <div class="mobileReasonImage" id="mobile1">
-
-          </div>
-          <div class="reasonText">
-            <h1>We put the <span id="power">POWER</span><br /> in your hands</h1>
-            <p>It's your getaway, and you deserve to have full control over all the details. Our job at Freeport
-              Travel is to empower you to make them happen. We work tirelessly for our customers to uncover
-              an extensive selection of destinations, escursions, transportation, and boarding options, wherever
-              you want to go.</p>
-            </div>
-            <div class="reasonImage" id="leftImg1">
-            </div>
-          </div>
-
-          <div class="reasonContainerRight">
-            <div class="reasonImage" id="rightImg2">
-            </div>
-            <div class="mobileReasonImage" id="mobile2"> <!--Image for smaller displays-->
-            </div>
-            <div class="reasonText">
-              <h1>Take <span id="uncertainty">uncertainty</span> out of the equation</h1>
-              <p>Relaxation. Peace of mind. Rest. We're guessing that you want these when you travel. We do too,
-                which is why we structured our business model around eliminating risk to you, our customers. When you
-                book with us, you can have complete assurance that your trip will go on. We intervene with hotels, transportation,
-                and excursion companies on your behalf if you aren't satisfied with them, and will do our best to make things smooth.
-              </p>
-            </div>
-          </div>
-
-          <div class="reasonContainerLeft">
-            <!--Image appears above text for smaller displays-->
-            <div class="mobileReasonImage" id="mobile3">
-            </div>
-            <div class="reasonText">
-              <h1>Your <span id="wallet">wallet</span> will thank you too</h1>
-              <p>Why spend more than you need to? We partner with a wide selection of companies in the
-                transportation, hotel, and recreation industries to pass on the deals we get straight to you, which
-                means you could save up to <b>40%</b> on your next trip.</p>
-              </div>
-              <div class="reasonImage" id="leftImg3">
-              </div>
-            </div>
-          </div>
-
-          <div class="tripShowcase">
-            <div class="textDescription">
-              <h1>Go Anywhere</h1>
-              <h3>Featured Destinations</h3>
-            </div>
-            <div class="showcaseGrid">
-
-              <div class="ts1">
-                <h2>Yosemite</h2>
-                <div class="tripSquare">
-                  <img src="Images/yosemite.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts2">
-                <h2>Caribbean</h2>
-                <div class="tripSquare">
-                  <img src="Images/caribbean.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts3">
-                <h2>Toronto</h2>
-                <div class="tripSquare">
-                  <img src="Images/toronto.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts4">
-                <h2>Singapore</h2>
-                <div class="tripSquare">
-                  <img src="Images/singapore.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts5">
-                <h2>Rio de Jainero</h2>
-                <div class="tripSquare">
-                  <img src="Images/rio.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts6">
-                <h2>Germany</h2>
-                <div class="tripSquare">
-                  <img src="Images/germany.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts7">
-                <h2>Venice</h2>
-                <div class="tripSquare">
-                  <img src="Images/venice.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts8">
-                <h2>London</h2>
-                <div class="tripSquare">
-                  <img src="Images/london.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-              <div class="ts9">
-                <h2>Australia</h2>
-                <div class="tripSquare">
-                  <img src="Images/australia.jpeg" style="height: 100%"/>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="appointmentContainer">
-            <h1>Your Trip Starts Here</h1>
-            <h2>Schedule an appointment</h2>
-            <form class="scheduleForm">
-              <div class="formWrapper">
-                <div class="inpContainer">
-                  <span>
-                    First Name:
-                  </span>
-                  <input class="scheduleInput" placeholder="First Name"/>
-                </div>
-                <div class="inpContainer">
-                  <span>
-                    Last Name:
-                  </span>
-                  <input class="scheduleInput" placeholder="Last Name"/>
-                </div>
-                <div class="inpContainer">
-                  <span>
-                    Email:
-                  </span>
-                  <input class="scheduleInput" placeholder="Email"/>
-                </div>
-                <div class="inpContainer">
-                  <span>
-                    Phone:
-                  </span>
-                  <input class="scheduleInput" placeholder="(555) 555-5555"/>
-                </div>
-                <button type="button" id="submitBasicBtn"  onclick="showBasicMessage()">Submit</button>
-                <p id="submitNotifBasic">Thanks, we look forward to working with you!</p>
-              </div>
-            </form>
-
-            <h2>Additional Details</h2>
-            <p>
-              If you'd like the appointment to be more efficient,
-              tell us a bit more about what you are looking for in advance
-            </p>
-            <a href="javascript:showAdditionalForm()" id="addLink"><button id="#addLinkButton">+ Additional Info</button></a>
-            <div class="extraInfo" id="extraInfoContent" style="display: none;">
-              <form class="scheduleForm">
-                <div class="formWrapper">
-                  <div class="inpContainer">
-                    <span>
-                      Trip Start Date:
-                    </span>
-                    <input class="scheduleInput" type="Date" placeholder="MM/DD/YYYY"/>
-                  </div>
-                  <div class="inpContainer">
-                    <span>
-                      Trip End Date:
-                    </span>
-                    <input class="scheduleInput" type="Date" placeholder="MM/DD/YYYY"/>
-                  </div>
-                  <div class="inpContainer">
-                    <span>
-                      Destination(s):
-                    </span>
-                    <input class="scheduleInput" placeholder="Destination(s)"/>
-                  </div>
-              <div class="inpContainer">
-                <span>
-                  Other Information:
-                </span>
-                <textarea class="scheduleInput" rows="5" cols="8"></textarea>
-              </div>
-              <button type="button" id="submitExtraBtn" onclick="showExtraMessage()">Submit</button>
-              <p id="submitNotifExtra">Thanks, we look forward to working with you!</p>
-            </div>
-          </form>
-        </div>
+      <div class="skillBoxes">
+        <h3 id="htmlOne">&lt; HTML &gt;</h3>
+        <h3 id="cssOne">{CSS, LESS}</h3>
+        <h3 id="jsOne">JavaScript( )</h3>
+        <h3 id="angularOne">{{Angular2}}</h3>
+        <h3 id="photoshopOne">Adobe Photoshop</h3>
+        <h3 id="illustratorOne">Adobe Illustrator</h3>
       </div>
     </div>
   </div>
 
-  <div class="footer">
-      <h2>Website created by Andrew Van Saun</h2>
-      <h3>This Freeport Travel Company is fictional, and is not intended to identify as a real company.</h3>
-      <h3>All images used are under the Creative Commons Zero (CC0) license.</h3>
-      <h3 id="attr">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h3>
-      <h3 id="attr">Icons made by <a href="https://www.flaticon.com/authors/chanut-is-industries" title="Chanut is Industries">Chanut is Industries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></h3>
+  <div class="experienceContent">
+    <h1>My Experience</h1>
+    <h2>Employment</h2>
+    <div class="metalcloakGroup">
+      <h3 id="firstH3">Front-End Web Developer Intern<p id="date">Current</p></h3>
+      <p id="jobTitle"><b>Metalcloak</b></p>
+      <p id="bulletList">Working on the user interface and front-end development of a marketing website and
+        multiple business web applications.
     </div>
-  </body>
-</html>
+    <div class="powerschoolGroup">
+      <h3 id="ps">Quality Assurance Intern<p id="date">2016</p></h3>
+      <p id="jobTitle"><b>PowerSchool</b></p>
+      <p id="bulletList">Developed software tests on web applications using Selenium to automate testing and
+        promote the quality of the user's experience of the software.</p>
+    </div>
+    <div class="posGroup">
+      <h3 id="pp">Software Development Intern</span></h3><p id="date">2015</p>
+      <p id="jobTitle"><b>POS Portal</b></p>
+      <p id="bulletList">Worked with both clients and internal teams to enhance the appearance, functionality,
+        and security of web applications.</p>
+    </div>
+    <h2 id="prj">Projects</h2>
+    <div class="seniorProjGroup">
+      <h3 id="sp">Senior Project </h3><p id="date">2016 - 2017</p>
+      <p id="jobTitle"><b>City of Davis Public Works Department</b></p>
+      <p id="bulletList">Coded in JavaScript, HTML5, and CSS to create two web-based games aimed at
+        educating K-12 students about recycling.</p>
+    </div>
+    <div class="softwareEngGroup">
+      <h3 id="secp">Software Engineering Class Project </h3><p id="date">2015</p>
+      <p id="jobTitle"><b>Placer Title Company</b></p>
+      <p id="bulletList">With a team, developed a web-based timesheet system for a client and had meetings with them to refine the project requirements.</p>
+    </div>
+  </div>
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <div class="exampleContent">
+    <h1>My Projects</h1>
+  </div>
+  <div class="previews">
+    <div class="freeportTravel">
+      <h2 id="projTitle">Freeport Travel Company</h2>
+      <a href="https://avansaun.github.io" target="_blank" class="darkTint"><img src="images/freeportPreview2.png" class="center" id="exampleImg"/></a>
+      <h3>This is a site that I created by hand, using pure HTML, LESS, Javascript, and JQuery.</h3>
+    </div>
+    <div class="davisRecycling">
+      <h2 id="projTitle">Davis Recycling Games</h2>
+      <a href="http://cityofdavis.org/city-hall/public-works/solid-waste-and-recycling/zero-waste-games" target="_blank" class="darkTint"><img src="images/recyclingGamesPreview.png" class="center" id="exampleImg"/></a>
+      <h3>This is the end result of my senior project. I mainly worked on the user interace and navigation, keeping in mind
+            that the target users are elementary school children.</h3>
+    </div>
+  </div>
+
+  <div class="contactContent">
+    <h1>So that's me...How about you?</h1>
+    <h2>I'm currently searching for a career beginning this upcoming winter.
+          Send me an email and let's talk!</h2>
+      <a href="mailto:andrewvansaun@gmail.com" id="mailLink">Send An Email</a>
+  </div>
+
+  <div class="footer">
+    <a href="javascript:void(0)" id="goToTop">Back To Top</a>
+  </div>
+</body>
 
 <script>
-  window.sr = ScrollReveal();
+  // Don't run scrollReveal.js plugin if the browser is InternetExplorer
+  function IsBrowserIE() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) //if a version of IE, return true
+    {
+        return true;
+    }
+    else  // If another browser, return false
+    {
+        return false;
+    }
+    return false;
+  }
 
+  window.sr = ScrollReveal({ reset: true });
   $(document).ready(function() {
-    $(".actionButton").click(function() {
-      $('html, body').animate({
-        scrollTop: $(".sellPoints").offset().top
-      }, 800);
+
+    $('#typeOut').typeIt({
+      speed: 50
     });
 
-    // if ($(window).width() > 900) {
-    //   $(".tripSquare").click(function() {
-    //     $('html, body').animate({
-    //       scrollTop: $(".appointmentContainer").offset().top
-    //     }, 800);
-    //   });
-    // }
-  });
+    if (!IsBrowserIE()) {
+      // typing animation in welcome div
+      $("#experience").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".experienceContent").offset().top
+        }, 400);
+      });
+      $("#examples").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".exampleContent").offset().top
+        }, 500);
+      });
+      $("#contact").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".contactContent").offset().top
+        }, 600);
+      });
+      $("#goToTop").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".header").offset().top
+        }, 600);
+      });
 
+      // Detect when element is in view and run animation
+      sr.reveal('.slider1', { reset: false, viewFactor: 0.4, origin: 'right', distance: '100%', duration: 750});
+      sr.reveal('.slider2', { reset: false, viewFactor: 0.4, origin: 'left', distance: '100%', duration: 750});
+      sr.reveal('.slider3', { reset: false, viewFactor: 0.4, origin: 'right', distance: '100%', duration: 750});
+      sr.reveal('#createFade', { reset: false, viewFactor: 0.6, delay: 550, duration: 1000});
+      sr.reveal('.metalcloakGroup', { reset: false });
+      sr.reveal('.powerschoolGroup', { reset: false });
+      sr.reveal('.posGroup', { reset: false });
+      sr.reveal('.seniorProjGroup', { reset: false });
+      sr.reveal('.softwareEngGroup', { reset: false });
+      sr.reveal('.freeportTravel', { reset: false });
+      sr.reveal('.davisRecycling', { reset: false });
+    }
+  });
 </script>

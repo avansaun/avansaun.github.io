@@ -1,0 +1,505 @@
+html {
+	/*avoid document resizing when scroll animations begin*/
+	overflow-x: hidden;
+}
+
+body {
+	/* Background pattern from Subtle Patterns */
+	background-image: url('images/shattered.png');
+	background-repeat: repeat;
+	background-size: auto;
+	background-attachment: fixed;
+  margin: 0;
+  padding:0;
+	overflow-x: hidden;
+}
+
+span.avoidwrap {
+	display: inline-block;
+}
+
+/*Base styles*/
+
+ /*Header section*/
+.header {
+	padding: 1px;
+	padding-top: 1%;
+	text-align: right;
+}
+
+#logo {
+	font-size: 6vmin;
+	color: #4770b2;
+}
+
+/*Header links section*/
+#navLinks li:first-child {
+    float:left;
+		margin-top: -1%;
+}
+.tabs li:last-child {
+	padding-right: 5vw;
+}
+.tabs ul{
+  text-align: right;
+}
+.tabs li {
+	display: inline-block;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.tabs a{
+	color: black;
+	text-decoration: none;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+.tabs a:visited{
+	color: black;
+	text-decoration: none;
+}
+.tabs a:hover{
+	color: #4770b2;
+	text-decoration: none;
+}
+.tabs a.active{
+	color: #4770b2;
+	text-decoration: none;
+}
+
+/*My Name Area style*/
+.welcome {
+	margin-top: 20vh;
+	height: 70vh;
+}
+.welcome h1{
+	text-align: center;
+	font-size: 5em;
+	color: #4770b2;
+  font-family: 'Montserrat', sans-serif;
+}
+.welcome h2{
+	font-size: 2em;
+	text-align: center;
+	padding-top: 3%;
+	margin-bottom: -5%;
+	color: black;
+	font-family: 'Convergence', sans-serif;
+}
+.welcome h3 {
+	font-size: 2em;
+	text-align: center;
+	margin-top: -5%;
+	padding-bottom: 3%;
+	color: black;
+	font-family: 'Convergence', sans-serif;
+}
+
+/*About Me section*/
+.explain {
+	height: 100vh;
+}
+
+.explain h1 {
+	background-color: rgba(71,112,178, 1);
+  height: 19vh;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 70px;
+	margin-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 19vh;
+}
+
+.slider1, .slider2, .slider3 {
+	height: 27vh;
+	display: table;
+	width: 100%;
+}
+
+.explain p {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	display: table-cell;
+	text-align: center;
+  vertical-align: middle;
+}
+
+.explain span {
+	color: #c5c5c5;
+}
+
+#slider1Content, #slider3Content {
+	background-color: rgba(71,112,178, 1);
+}
+#slider2Content {
+	background-color: rgba(71,112,178, 1);
+}
+
+#overview {
+	padding-top: 3%;
+	text-align: center;
+	color: black;
+}
+
+.explain a {
+	color: #4770b2;
+	font-size: 2vmax;
+	text-decoration: none;
+}
+
+/*Grid Box section*/
+.thinkGroup {
+	margin-top: 100px;
+	position: relative;
+	display: block;
+	margin-bottom: 200
+}
+.headerText {
+	width: 80%;
+	margin-left: 10%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.thinkGroup h1, .thinkGroup h2{
+  height: 25vh;
+	display: inline;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 25px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.skillBoxes {
+	margin-left: 45px;
+	margin-right: 45px;
+	margin-bottom: 15px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+.skillBoxes h3 {
+	padding-top: 30%;
+	padding-bottom: 30%;
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 30px;
+	transition: 0.6s;
+}
+#code {
+	color: rgba(71,112,178, 1);
+}
+#create {
+	color: rgba(71,178,137, 1);
+}
+#htmlOne, #jsOne, #cssOne, #angularOne {
+	background-color: rgba(71,112,178, 1);
+}
+ #photoshopOne, #illustratorOne {
+	background-color: rgba(71,178,137, 1);
+}
+
+#htmlOne:hover, #jsOne:hover, #cssOne:hover, #angularOne:hover{
+	letter-spacing: 4px;
+	transition: 0.6s;
+	background-color: rgba(71,112,178, 0.8);
+}
+#photoshopOne:hover, #illustratorOne:hover {
+	letter-spacing: 4px;
+	transition: 0.6s;
+	background-color: rgba(71,178,137, 0.8);
+}
+
+/*Experience section*/
+.experienceContent {
+	margin-top: 150px;
+}
+
+.experienceContent h1{
+	text-align: center;
+	font-size: 6vmax;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1%;
+}
+
+.experienceContent h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.5vmax;
+	margin-left: 4%;
+}
+
+.experienceContent h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5vmax;
+	margin-left: 6%;
+}
+
+#firstH3 {
+	margin-top: -1%;
+}
+#jobTitle {
+	margin-bottom: 3%;
+}
+#bulletList {
+	width: 75%;
+	text-indent: -2%;
+	padding-bottom: 1%;
+	margin-left: 10%;
+	line-height: 1.75;
+}
+#location {
+	font-size: 1.75vmax;
+	padding-left: 2%;
+}
+#date {
+	float: right;
+	padding-right: 10%;
+	font-size: 1.75vmax;
+}
+
+.experienceContent p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5vmax;
+	margin-left: 6%;
+	margin-top: -2%;
+}
+
+/*My Projects section */
+.exampleContent {
+	margin-top: 125px;
+}
+.exampleContent h1{
+	text-align: center;
+	font-size: 6vmax;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1%;
+}
+
+#exampleImg.center {
+    display: block;
+    margin:0 auto;
+		height: auto;
+		width: 40vw;
+		box-shadow: rgba(0,0,0,.25) 3px 5px 5px;
+		transition: 0.3s;
+}
+
+.previews  {
+	padding-bottom: 5%;
+}
+
+.previews h2 {
+	font-size: 3.0vw;
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.previews h3 {
+	width: 80%;
+	margin-left: 10%;
+	font-size: 1.5vw;
+	text-align: center;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 75px;
+}
+
+#aboveText {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+#exampleImg:hover {
+	transform: scale(1.05, 1.05);
+	transition: 0.3s;
+}
+
+/*Contact section*/
+.contactContent {
+	width: 100%;
+	text-align: center;
+	margin-top: 75px;
+	margin-bottom: 250px;
+}
+.contactContent h1{
+	text-align: center;
+	font-size: 6vmax;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: -1%;
+}
+
+.contactContent h2 {
+	font-size: 1.75vw;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 8%;
+	line-height: 1.75;
+	padding-right: 8%;
+}
+
+#mailLink {
+	text-align: center;
+	font-size: 1.75vw;
+	text-decoration: none;
+	margin-bottom: 50px;
+	color: #4770b2;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Footer Section*/
+.footer {
+	height: 30px;
+	background-color: #4770b2;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+}
+
+.footer a {
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+
+/*Browser Width Specific Styles*/
+@media (min-width: 1025px) {
+	.welcome {
+		line-height: 1.75;
+	}
+	.welcome h2, h3 {
+		font-size: 2em;
+	}
+	.explain p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1025px) {
+/*Header section*/
+	#logo {
+		font-size: 80px !important;
+	}
+
+	#experience, #examples, #contact {
+		font-size: 30px !important;
+	}
+
+	/*Hi my name is Andrew section*/
+	.welcome {
+		/*margin-top: vh !important;*/
+		margin-left:3%;
+		width: 94%;
+	}
+
+
+	/*All major header h1s*/
+	.explain h1, .experienceContent h1, .thinkGroup h1,
+			.exampleContent h1, .contactContent h1 {
+		font-size: 10vw !important;
+	}
+
+	/*About me section*/
+	.explain p {
+		font-size: 3vh !important;
+	}
+
+	/*Grid boxes section*/
+	.headerText {
+		margin-top: 10vh !important;
+	}
+	#codeHeader, #createFade{
+		font-size: 90px !important;
+	}
+	.skillBoxes {
+		margin-left: 10%;
+		margin-right: 10%;
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+	/*Experience section*/
+	.experienceContent {
+		margin-top: 250px !important;
+	}
+
+	/*My Projects section*/
+	#exampleImg.center {
+		transform: scale(2);
+	}
+	#exampleImg:hover {
+		transform: scale(2) !important;
+	}
+	#projTitle {
+		margin-bottom: 150px !important;
+		font-size: 50px !important;
+		font-weight: bold;
+	}
+	.previews h3{
+		margin-left: 10%;
+		margin-top: 150px !important;
+		font-size: 23px !important;
+	}
+	#davisRecycling {
+		margin-top: 25px !important;
+	}
+	.contactContent h2, .contactContent a {
+		font-size: 35px !important;
+	}
+
+	/*Footer section*/
+	.footer {
+		height: 50px !important;
+		font-size: 25px !important;
+		line-height: 50px !important;
+	}
+}
+
+/* IE Specific Stylings for CSS Grid */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.skillBoxes {
+		display: -ms-grid;
+		-ms-grid-columns: 49% 2% 49% !important;
+		-ms-grid-rows: 30vh 10px 30vh 10px 30vh !important;
+	}
+
+	/*Assigns each box to a grid position*/
+	#htmlOne {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+	}
+
+	#cssOne {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+	}
+
+	#jsOne {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+	}
+
+	#angularOne {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+
+	#photoshopOne {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+	}
+
+	#illustratorOne {
+		-ms-grid-row: 5;
+		-ms-grid-column: 3;
+	}
+}
